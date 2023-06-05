@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="shortcut icon" href="./images/icon-preto.png"
+            type="image/x-icon" />
+        <title>API Ricky and Morty</title>
+    </head>
+    <body>
+        <header>
+            <img id="icon" src="./images/icon.PNG"
+                alt="ícone Rick and Morty" />
+            <!--cabeçalho com a imagem-->
+            <div>
+                <div class="container-img">
+                    <div class="img">
+                        <h1>API de Rick and Morty</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <!--formulario de busca-->
+
+            <form class='form' onsubmit="searchCharacters(event)">
+                <label>
+                    <input type='text' name='buscar' id='input'
+                        placeholder=" Digite o nome do personagem" />
+                    <button type='submit'><img id="lupa" src="./images/lupa.png"
+                            alt="lupa"></button>
+                </label>
+            </form>
+
+            <!--minha lista de personagens-->
+            <section class='list' id='list'>
+
+            </section>
+            <div class='buttons'>
+                <button id='prev'>Anterior</button>
+                <p id="pages"></p>
+                <button id='next'>Próximo</button>
+            </div>
+        </main>
+        <div id="container">
+            <img class="rick-and-morty" src="./images/rick-and-morty.png"
+                alt="rick-and-morty">
+        </div>
+        <footer>
+            <p id="informations">Personagens: 826 Localizações: 126 Episódios: 51</p>
+
+            <p id="credits">Desenvolvido por: <strong>Rafael Lima</strong> XX/06/2023</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
